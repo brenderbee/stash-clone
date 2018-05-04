@@ -51,12 +51,9 @@
 }
 
 .top-navbar-content {
-  align-items: center;
   float: right;
-}
-
-.top-navbar-content ul {
-  margin-right: 2rem;
+  display: flex;
+  flex-direction: row;
 }
 
 .top-navbar-content li {
@@ -68,15 +65,16 @@
 }
 .top-navbar-content .input-group {
   height: 35px;
-  width: 15rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 14rem;
 }
 
 .top-navbar-content .form-control {
   border-radius: 0;
   border: none;
   display: inline-block;
-  float: right;
-  width: 60%;
+  width: 65%;
 }
 
 .top-navbar-content span {
@@ -86,7 +84,7 @@
   font-size: 0.85rem;
   font-weight: 400;
   line-height: 35px;
-  width: 40%;
+  width: 35%;
 }
 
 .top-navbar-content span:hover {
