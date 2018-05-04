@@ -1,0 +1,13 @@
+/* Header Styles */
+.header .topbar {
+  background-color: #373737;
+  color: white;
+  font-size: 1rem;
+  height: 38px;
+}
+
+.header .top-navbar {
+  background-color: #00b089;
+  color: white;
+  height: 85px;
+}
