@@ -66,11 +66,30 @@
   line-height: 85px;
   padding-right: 2rem;
 }
+.top-navbar-content .input-group {
+  height: 35px;
+  width: 15rem;
+}
 
 .top-navbar-content .form-control {
   border-radius: 0;
   border: none;
   display: inline-block;
   float: right;
-  width: 1rem;
+  width: 60%;
+}
+
+.top-navbar-content span {
+  border-radius: 0;
+  border: none;
+  background-color: #77c042;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 35px;
+  width: 40%;
+}
+
+.top-navbar-content span:hover {
+  background-color: #68a939;
+  transition: 0.3s;
 }
