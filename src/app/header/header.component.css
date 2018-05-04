@@ -5,6 +5,7 @@
   width: 100%;
   z-index: 1;
 }
+
 .header .topbar {
   background-color: #373737;
   color: white;
@@ -47,4 +48,29 @@
   margin-left: 2rem;
   margin-top: 2%;
   max-width: 230px;
+}
+
+.top-navbar-content {
+  align-items: center;
+  float: right;
+}
+
+.top-navbar-content ul {
+  margin-right: 2rem;
+}
+
+.top-navbar-content li {
+  display: inline;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 85px;
+  padding-right: 2rem;
+}
+
+.top-navbar-content .form-control {
+  border-radius: 0;
+  border: none;
+  display: inline-block;
+  float: right;
+  width: 1rem;
 }
