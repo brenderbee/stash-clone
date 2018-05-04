@@ -1,24 +1,8 @@
-<div class="card">
+<div class="card" *ngFor="let currentTeapot of gridTeapotList">
   <img class="card-img-top" src="../assets/img/redstump.jpeg" alt="Card image">
   <div class="card-body">
-    <h4>$30.00</h4>
-    <h4 class="card-title">stump teapot with infuser</h4>
-    <p class="card-text">rating</p>
-  </div>
-</div>
-<div class="card">
-  <img class="card-img-top" src="../assets/img/redstump.jpeg" alt="Card image">
-  <div class="card-body">
-    <h4>$30.00</h4>
-    <h4 class="card-title">stump teapot with infuser</h4>
-    <p class="card-text">rating</p>
-  </div>
-</div>
-<div class="card">
-  <img class="card-img-top" src="../assets/img/redstump.jpeg" alt="Card image">
-  <div class="card-body">
-    <h4>$30.00</h4>
-    <h4 class="card-title">stump teapot with infuser</h4>
-    <p class="card-text">rating</p>
+    <p class="grid-price">${{currentTeapot.price}}</p>
+    <p class="grid-name">{{currentTeapot.name}}</p>
+    <p>rating</p>
   </div>
 </div>
