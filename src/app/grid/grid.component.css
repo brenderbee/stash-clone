@@ -1,5 +1,28 @@
 .card {
+  border-radius: 0;
+  border: none;
   display: flex;
   flex-direction: column;
+  margin-right: 1%;
   width: 30%;
+}
+
+.quickview {
+  background-color: rgb(255,255,255,.9);
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 25%;
+  z-index: 1;
+}
+
+.quickview p {
+  font-size: 0.7rem;
+  font-weight: 300;
+  line-height: 3rem;
+  margin: auto;
+}
+
+p.grid-price {
+  color: #75c044;
 }
