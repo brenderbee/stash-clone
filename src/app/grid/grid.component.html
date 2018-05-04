@@ -1,6 +1,6 @@
-<div class="card" *ngFor="let currentTeapot of gridTeapotList" (mouseenter)="showQuickview()" (mouseleave)="hideQuickview()">
+<div class="card" *ngFor="let currentTeapot of gridTeapotList" (mouseenter)="showQuickview(currentTeapot)" (mouseleave)="hideQuickview(currentTeapot)">
   <div class="card-image">
-    <img class="card-img-top" src="../assets/img/redstump.jpeg" alt="Card image">
+    <img class="card-img-top" src="{{currentTeapot.image}}" alt="Card image">
     <div class="quickview" *ngIf="quickview">
       <p>+QUICKVIEW</p>
     </div>
