@@ -1,13 +1,43 @@
 /* Header Styles */
+.header {
+  margin: 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
 .header .topbar {
   background-color: #373737;
   color: white;
-  font-size: 1rem;
+  font-size: 0.7rem;
+  font-weight: 300;
   height: 38px;
+}
+
+.header .topbar li {
+  display: inline;
+  float: right;
+  margin-right: 2rem;
+  line-height: 38px;
+  cursor: pointer;
+}
+
+.header .topbar .icons li {
+  display: inline;
+  float: right;
+  font-size: 1rem;
+  margin-right: 1rem;
+  line-height: 38px
+}
+
+.header .topbar li:hover {
+  color: #848484;
+  transition: 0.3s;
 }
 
 .header .top-navbar {
   background-color: #00b089;
   color: white;
+  font-weight: 700;
   height: 85px;
 }
