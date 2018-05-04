@@ -41,3 +41,12 @@
   font-weight: 700;
   height: 85px;
 }
+
+.header .top-navbar img {
+  /* float: left; */
+  height: 50%;
+  line-height: 85px;
+  margin-left: 2rem;
+  margin-top: 2%;
+  max-width: 230px;
+}
