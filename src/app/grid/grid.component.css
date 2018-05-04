@@ -1,10 +1,8 @@
 .card {
   border-radius: 0;
   border: none;
-  display: flex;
-  flex-direction: column;
   margin-right: 1%;
-  width: 30%;
+  width: 33%;
 }
 
 .quickview {
@@ -30,6 +28,9 @@
   transition: 0.3s;
 }
 
+.grid-title {
+  margin-top: auto;
+}
 
 p.grid-price {
   color: #75c044;

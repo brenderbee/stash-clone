@@ -7,7 +7,7 @@ export class Teapot {
     public lid: boolean,
     public capacity: number,
     public image: string,
-    public price: number,
+    public price: string,
     public id: number
   ) {}
 }
