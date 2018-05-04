@@ -23,6 +23,13 @@
   margin: auto;
 }
 
+.quickview:hover {
+  background-color: #00b089;
+  color: white;
+  transition: 0.3s;
+}
+
+
 p.grid-price {
   color: #75c044;
 }

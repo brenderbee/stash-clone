@@ -9,5 +9,13 @@ import { Teapot } from '../models/teapot.model';
 export class GridComponent {
   @Input() gridTeapotList: Teapot[];
 
+  quickview = null;
 
+  showQuickview() {
+    this.quickview = true;
+  }
+
+  hideQuickview() {
+    this.quickview = null;
+  }
 }
