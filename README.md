@@ -7,7 +7,7 @@
 ## Description
 
 _This webpage application is designed to clone the
-"teapots" section of the [Stash Tea website] (https://www.stashtea.com/collections/teapots)._
+"teapots" section of the [Stash Tea](https://www.stashtea.com/collections/teapots) website._
 
 _This project uses Angular CLI as a framework. All dependencies required are included in this project. Node and npm are required to run Angular CLI v1.6.5._
 
@@ -50,6 +50,13 @@ _This project was generated with [Angular CLI](https://github.com/angular/angula
     ```
     $ npm install
     ```
+#### Karma Installation
+  * If you do not have Karma installed globally, then run the following:
+    ```
+    $ npm install -g karma-cli
+    ```
+
+
 #### Development server
   * Run the following for a dev server:
     ```
@@ -66,11 +73,6 @@ _This project was generated with [Angular CLI](https://github.com/angular/angula
     ```
     $ ng build -prod
     ```
-#### Karma Installation
-  * If you do not have Karma installed globally, then run the following:
-    ```
-    $ npm install -g karma-cli
-    ```
 #### Running unit tests
   * Run the following to execute the unit tests via [Karma](https://karma-runner.github.io):
     ```
@@ -81,7 +83,6 @@ _This project was generated with [Angular CLI](https://github.com/angular/angula
     ```
     $  ng e2e
     ```
-
 #### Further help
   * To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
@@ -112,9 +113,20 @@ _Do not contact anyone with questions or comments regarding this project._
 | * css-loader & style-loader | | |
 
 ### Specs
-| Behavior |
-| :-------------     |
-| 1. test. |
+1. The program should return the title "Teapots".
+  * Input: n/a
+  * Output: "Teapots"
+
+### User Stories
+1. As a user, I want to see all of the teapots available for purchase.
+2. As a user, I want to click a teapot and see a summary of that teapot.
+3. As a user, I want to see the price of a selected teapot.
+4. As a user, I want to add a teapot to my shopping cart.
+5. As a user, I want to be able to add multiple teapots to my shopping chart.
+6. As a user, I want to see my shopping cart update when a new teapot is added to it.
+7. As a user, I want to sort the available teapots by price (ascending and descending).
+8. As a user, I want to sort the available teapots by best-selling.
+9. As a user, I want to sort the available teapots by rating.
 
 ### License
 Copyright (c) 2018 ****_Brenda Franco_****
