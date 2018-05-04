@@ -63,6 +63,12 @@
   line-height: 85px;
   padding-right: 2rem;
 }
+
+.top-navbar-content li:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
 .top-navbar-content .input-group {
   height: 35px;
   margin-top: auto;
