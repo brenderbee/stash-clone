@@ -22,20 +22,18 @@ main-content {
 
 app-sidebar {
   background-color: #f6f6f6;
-  border: 1px solid black;
   display: flex;
   flex-direction: row;
   height: auto;
   margin-right: 0.33%;
   overflow-x: hidden;
   position: absolute;
-  top: 123;
+  /* top: 123px; */
   width: 24.67%;
 }
 
 app-grid {
   align-content: stretch;
-  border: 1px solid black;
   float: right;
   align-items: center;
   background-color: #f6f6f6;
