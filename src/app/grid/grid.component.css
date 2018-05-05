@@ -45,6 +45,10 @@ p.grid-name {
   font-weight: 300;
 }
 
+p.grid-rating {
+  color: #ffcd1a;
+}
+
 p.grid-name:hover {
   color: #00b089;
   cursor: pointer;

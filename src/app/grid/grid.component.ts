@@ -18,4 +18,5 @@ export class GridComponent {
   hideQuickview() {
     this.quickview = null;
   }
+
 }

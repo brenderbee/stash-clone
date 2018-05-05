@@ -8,6 +8,7 @@ export class Teapot {
     public capacity: number,
     public image: string,
     public price: string,
-    public id: number
+    public id: number,
+    public rating: Array<number>
   ) {}
 }

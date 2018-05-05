@@ -9,7 +9,7 @@
     <p class="grid-price">${{currentTeapot.price}}</p>
     <div class="grid-title">
       <p class="grid-name">{{currentTeapot.name}}</p>
-      <p>rating</p>
+      <p class="grid-rating"><i class="fa fa-star" *ngFor="let star of currentTeapot.rating"></i></p>
     </div>
   </div>
 </div>
