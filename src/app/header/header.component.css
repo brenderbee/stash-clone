@@ -64,6 +64,7 @@
 .top-navbar-content .input-group {
   height: 35px;
   margin-top: auto;
+  margin-right: 1rem;
   margin-bottom: auto;
   width: 14rem;
 }
@@ -75,11 +76,15 @@
   width: 65%;
 }
 
+.top-navbar-content p {
+  margin: 0 0.7rem;
+}
+
 .top-navbar-content span {
   border-radius: 0;
   border: none;
   background-color: #77c042;
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   font-weight: 400;
   line-height: 35px;
   width: 35%;
