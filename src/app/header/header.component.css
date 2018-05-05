@@ -34,18 +34,18 @@
   height: 85px;
 }
 
+.top-navbar-content {
+  float: right;
+  display: flex;
+  flex-direction: row;
+}
+
 .header .top-navbar img {
   height: 50%;
   line-height: 85px;
   margin-left: 2rem;
   margin-top: 2%;
   max-width: 230px;
-}
-
-.top-navbar-content {
-  float: right;
-  display: flex;
-  flex-direction: row;
 }
 
 .top-navbar-content li {
