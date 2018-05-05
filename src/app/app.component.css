@@ -1,8 +1,18 @@
-main-content {
-  /* position: relative;
-  display: flex;
-  flex-direction: row; */
+app-header {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
 
+app-banner {
+  color: white;
+  width: 100%;
+  margin-bottom: 0.875rem;
+}
+
+main-content {
   display: flex;
   flex-direction: row;
   width: 100%;
