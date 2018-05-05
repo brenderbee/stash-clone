@@ -40,7 +40,7 @@ app-grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 37px;
   position: sticky;
   top: 123px;
   width: 75%;
