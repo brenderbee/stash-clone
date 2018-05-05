@@ -1,5 +1,9 @@
+.sidebar {
+  width: 100%;
+}
+
 .sidebar .filter-title {
-  display: block;
+  display: flex;
   height: 21px;
   width: 100%;
   font-weight: 500;
@@ -12,11 +16,12 @@
   font-size: 0.8rem;
   background-color: white;
   margin: 0;
-  width: 200%;
+  width: 100%;
 }
 
 .sidebar .filters p {
   display: block;
+  width: 100%;
   line-height: 3.5rem;
   margin: 0;
   padding-left: 1.2rem;
@@ -31,4 +36,10 @@
 
 .sidebar .filters p:hover {
   background-color: #f9f9f9;
+}
+
+.sidebar .filters-field {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
