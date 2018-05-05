@@ -1,1 +1,14 @@
+.sidebar .filter-title p {
+  line-height: 50px;
+  width: 100%;
+  border: 1px solid black;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-left: 1rem;
+}
 
+.sidebar .filters {
+  width: 100%;
+  background-color: white;
+  width: 100%;
+}
