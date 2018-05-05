@@ -1,3 +1,6 @@
+.banner {
+  position: relative;
+}
 .banner img {
   height: auto;
   width: 100%;
@@ -8,7 +11,7 @@
   width: 30%;
   min-width: 350px;
   left: 1.75rem;
-  bottom: 5.5rem;
+  bottom: 1.75rem;
 }
 
 .banner-text h2 {
@@ -20,4 +23,5 @@
 .banner-text p {
   font-size: 1rem;
   font-weight: 300;
+  margin-bottom: 0;
 }
