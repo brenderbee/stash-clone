@@ -54,3 +54,7 @@ p.grid-name:hover {
   color: white;
   transition: 0.3s;
 }
+
+app-quickview {
+  display: block;
+}

@@ -1,6 +1,11 @@
 .quickview-modal {
-  position: fixed;
-  background-color: red;
-  width: 250px;
-  height: 250px;
+  position: absolute;
+  margin: 0 auto;
+  z-index: 10000;
+  height: 80%;
+  width: 80%;
+  /* max-width: 992px;
+  min-height: 560px;
+  max-height: 740px; */
+  border: 1px solid black;
 }
