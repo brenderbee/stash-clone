@@ -1,25 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input} from '@angular/core';
+import { Filter } from '../models/filter.model';
 
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.css']
 })
-export class SidebarComponent implements OnInit {
+export class SidebarComponent {
+  @Input() sidebarFilterList: Filter[];
 
   selectedFilter = null;
 
-  showFilter() {
-    this.selectedFilter = "test";
+  showFilter(currentFilter: Filter) {
+    this.selectedFilter = currentFilter;
   }
 
   hideFilter() {
     this.selectedFilter = null;
-  }
-
-  constructor() { }
-
-  ngOnInit() {
   }
 
 }
