@@ -1,3 +1,18 @@
 <div class="quickview-modal">
-  <p>{{childCurrentTeapot.name}}</p>
+  <div class="quickview-modal-left">
+    <div class="quickview-modal-preview">
+      <span><i class="fa fa-arrow-left"></i></span>
+      <img src="{{childCurrentTeapot.image}}" alt="{{childCurrentTeapot.name}} image">
+      <span><i class="fa fa-arrow-right"></i></span>
+    </div>
+  </div>
+  <div class="quickview-modal-right">
+    <div class="remove">
+      <span><i class="fa fa-remove"></i></span>
+    </div>
+    <div class="quickview-modal-summary">
+      <p>Item: #{{childCurrentTeapot.id}}</p>
+      <h2>{{childCurrentTeapot.name }}</h2>
+    </div>
+  </div>
 </div>

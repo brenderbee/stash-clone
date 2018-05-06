@@ -1,11 +1,39 @@
 .quickview-modal {
-  position: absolute;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  position: fixed;
+  left: 15%;
+  top: 5%;
   z-index: 10000;
-  height: 80%;
-  width: 80%;
-  /* max-width: 992px;
+  height: 90%;
+  width: 75%;
+  max-width: 992px;
   min-height: 560px;
-  max-height: 740px; */
-  border: 1px solid black;
+  max-height: 740px;
+  box-shadow: 0 5px 34px 1px rgba(20,20,20,0.12);
+}
+
+.quickview-modal-left {
+  display: flex;
+  flex: 1;
+}
+
+.quickview-modal-right {
+  display: flex;
+  flex: 1;
+}
+
+.quickview-modal-preview img {
+  margin: 20% auto;
+  width: 85%;
+}
+
+.quickview-modal-summary p {
+  font-size: 0.8rem;
+  color: #838383;
+}
+
+.quickview-modal-summary h2 {
+  font-size: 2rem;
 }

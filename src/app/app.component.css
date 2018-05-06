@@ -29,7 +29,6 @@ app-sidebar {
   margin-right: 0.33%;
   overflow-x: hidden;
   position: absolute;
-  /* top: 123px; */
   width: 24.67%;
 }
 
@@ -42,7 +41,6 @@ app-grid {
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 37px;
-  position: sticky;
   top: 123px;
   width: 75%;
 }
