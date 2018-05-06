@@ -1,20 +1,35 @@
 <div class="sidebar">
   <p class="filter-title">FILTER BY</p>
   <div class="filters">
-    <div class="filters-field">
-      <p>ACCESSORIES<i class="fa fa-caret-left"></i></p>
+    <div class="filters-field" *ngIf="selectedFilter === null" (click)="showFilter()">
+      <p>ACCESSORIES</p><i class="fa fa-caret-left"></i>
+    </div>
+    <div class="filters-field-selected" *ngIf="selectedFilter" (click)="hideFilter()">
+      <div class="filters-field-selected-title">
+        <p>ACCESSORIES</p><i class="fa fa-caret-down"></i>
+      </div>
+      <form>
+        <div>
+          <input type="checkbox" id="accessories-infuser" name="accessories" value="true">
+          <label for="accessories">with infuser</label>
+        </div>
+        <div>
+          <input type="checkbox" id="accessories-lid" name="accessories" value="true">
+          <label for="accessories">with lid</label>
+        </div>
+      </form>
     </div>
     <div class="filters-field">
-      <p>CAPACITY<i class="fa fa-caret-left"></i></p>
+      <p>CAPACITY</p><i class="fa fa-caret-left"></i>
     </div>
     <div class="filters-field">
-      <p>CARE<i class="fa fa-caret-left"></i></p>
+      <p>CARE</p><i class="fa fa-caret-left"></i>
     </div>
     <div class="filters-field">
-      <p>SPECIAL MATERIALS<i class="fa fa-caret-left"></i></p>
+      <p>SPECIAL MATERIALS</p><i class="fa fa-caret-left"></i>
     </div>
     <div class="filters-field">
-      <p>STYLE<i class="fa fa-caret-left"></i></p>
+      <p>STYLE</p><i class="fa fa-caret-left"></i>
     </div>
   </div>
 </div>

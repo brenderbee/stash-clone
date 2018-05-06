@@ -5,13 +5,14 @@
 .sidebar .filter-title {
   display: flex;
   height: 21px;
-  width: 100%;
   font-weight: 500;
   font-size: 0.8rem;
   margin-left: 1.2rem;
 }
 
 .sidebar .filters {
+  display: flex;
+  flex-direction: column;
   color: #75c044;
   font-size: 0.8rem;
   background-color: white;
@@ -19,9 +20,13 @@
   width: 100%;
 }
 
-.sidebar .filters p {
-  display: block;
+.sidebar .filters-field {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar .filters p {
   line-height: 3.5rem;
   margin: 0;
   padding-left: 1.2rem;
@@ -29,18 +34,48 @@
 
 .sidebar .filters i {
   font-size: 1.5rem;
-  float: right;
   margin-right: 1.2rem;
   margin-top: 1rem;
 }
 
-.sidebar .filters p:hover {
+.sidebar .filters-field:hover {
   background-color: #f9f9f9;
   cursor: pointer;
 }
 
-.sidebar .filters-field {
+.sidebar .filters-field-selected {
   width: 100%;
   display: flex;
+  flex-direction: column;
+}
+
+.filters-field-selected-title {
+  display: flex;
+  background-color: #f9f9f9;
+  justify-content: space-between;
+}
+
+.filters-field-selected form {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+}
+
+.filters-field-selected form div {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #848484;
+  display: flex;
   flex-direction: row;
+  align-items: baseline;
+  margin-left: 3rem;
+}
+
+.filters-field-selected form label {
+  margin-left: 1rem;
+}
+
+.filters-field-selected form div:hover {
+  color: #00b089;
+  transition: 0.3s;
 }

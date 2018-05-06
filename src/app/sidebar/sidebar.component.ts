@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
+  selectedFilter = null;
+
+  showFilter() {
+    this.selectedFilter = "test";
+  }
+
+  hideFilter() {
+    this.selectedFilter = null;
+  }
+
   constructor() { }
 
   ngOnInit() {
