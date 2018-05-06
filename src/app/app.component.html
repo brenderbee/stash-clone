@@ -3,7 +3,7 @@
   <app-banner></app-banner>
   <div class="main-content">
     <app-sidebar></app-sidebar>
-    <app-grid [gridTeapotList]="masterTeapotList"></app-grid>
-    <app-quickview></app-quickview>
+    <app-grid [gridTeapotList]="masterTeapotList" (mouseEnterSender)="showQuickviewButton($event)" (mouseLeaveSender)="hideQuickviewButton()"></app-grid>
+    <app-quickview *ngIf="quickviewButton"></app-quickview>
   </div>
 </div>

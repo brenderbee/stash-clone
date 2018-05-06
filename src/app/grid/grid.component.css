@@ -8,29 +8,6 @@
   width: 33%;
 }
 
-.quickview {
-  background-color: rgb(255,255,255,.9);
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  top: 25%;
-  z-index: 1;
-}
-
-.quickview p {
-  cursor: pointer;
-  font-size: 0.7rem;
-  font-weight: 300;
-  line-height: 3rem;
-  margin: auto;
-}
-
-.quickview:hover {
-  background-color: #00b089;
-  color: white;
-  transition: 0.3s;
-}
-
 .grid-title {
   margin-top: auto;
 }

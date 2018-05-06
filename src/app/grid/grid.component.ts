@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Teapot } from '../models/teapot.model';
 
 @Component({
@@ -8,15 +8,15 @@ import { Teapot } from '../models/teapot.model';
 })
 export class GridComponent {
   @Input() gridTeapotList: Teapot[];
+  @Output() mouseEnterSender = new EventEmitter();
+  @Output() mouseLeaveSender = new EventEmitter();
 
-  quickview = null;
-
-  showQuickview() {
-    this.quickview = true;
+  mouseEnteredCard(teapotToQuickView: Teapot) {
+    this.mouseEnterSender.emit(teapotToQuickView)
   }
 
-  hideQuickview() {
-    this.quickview = null;
+  mouseLeftCard() {
+    this.mouseLeaveSender.emit();
   }
 
 }

@@ -53,4 +53,15 @@ export class AppComponent {
         [1,2,3,4,5]
     )
   ]
+
+  quickviewButton = null;
+
+  showQuickviewButton(currentTeapot: Teapot) {
+    this.quickviewButton = currentTeapot;
+    console.log(this.quickviewButton);
+  }
+
+  hideQuickviewButton() {
+    this.quickviewButton = null;
+  }
 }
