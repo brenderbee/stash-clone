@@ -4,8 +4,8 @@
     <div class="filters-field" *ngIf="selectedFilter === null" (click)="showFilter()">
       <p>ACCESSORIES</p><i class="fa fa-caret-left"></i>
     </div>
-    <div class="filters-field-selected" *ngIf="selectedFilter" (click)="hideFilter()">
-      <div class="filters-field-selected-title">
+    <div class="filters-field-selected" *ngIf="selectedFilter">
+      <div class="filters-field-selected-title" (click)="hideFilter()">
         <p>ACCESSORIES</p><i class="fa fa-caret-down"></i>
       </div>
       <form>
