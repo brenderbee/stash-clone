@@ -7,7 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { BannerComponent } from './banner/banner.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { GridComponent } from './grid/grid.component';
-import { QuickviewComponent } from './quickview/quickview.component';
+import { QuickviewComponent } from './grid/quickview/quickview.component';
 
 
 @NgModule({
