@@ -11,19 +11,10 @@ export class GridComponent {
   @Output() mouseEnterSender = new EventEmitter();
   @Output() mouseLeaveSender = new EventEmitter();
 
-  // mouseEnteredCard(teapotToQuickView: Teapot) {
-  //   this.mouseEnterSender.emit(teapotToQuickView)
-  // }
-  //
-  // mouseLeftCard() {
-  //   this.mouseLeaveSender.emit();
-  // }
-
   selectedTeapot = null;
 
   showQuickviewButton(currentTeapot: Teapot) {
     this.selectedTeapot = currentTeapot;
-    console.log(this.selectedTeapot);
   }
 
   hideQuickviewButton() {
