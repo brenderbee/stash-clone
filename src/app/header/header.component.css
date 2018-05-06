@@ -32,36 +32,50 @@
   color: white;
   font-weight: 700;
   height: 85px;
-}
-
-.top-navbar-content {
-  float: right;
   display: flex;
   flex-direction: row;
 }
 
 .header .top-navbar img {
-  height: 50%;
+  display: flex;
+  flex: 15%;
+  height: 60%;
   line-height: 85px;
   margin-left: 2rem;
-  margin-top: 2%;
+  margin-top: auto;
+  margin-bottom: auto;
   max-width: 230px;
 }
 
-.top-navbar-content li {
-  display: inline;
-  font-size: 0.85rem;
-  font-weight: 400;
-  line-height: 85px;
-  padding-right: 2rem;
+.top-navbar-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
-.top-navbar-content li:hover {
+.top-navbar-content-flex {
+  display: flex;
+  width: 100%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  justify-content: space-around;
+}
+.top-navbar-content-flex p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.top-navbar-content p:hover {
   color: yellow;
   cursor: pointer;
 }
 
 .top-navbar-content .input-group {
+  display: flex;
+  flex: 30%;
   height: 35px;
   margin-top: auto;
   margin-right: 1rem;
@@ -73,7 +87,7 @@
   border-radius: 0;
   border: none;
   display: inline-block;
-  width: 65%;
+  width: 60%;
 }
 
 .top-navbar-content p {
@@ -81,13 +95,15 @@
 }
 
 .top-navbar-content span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 0;
   border: none;
   background-color: #77c042;
   font-size: 0.7rem;
   font-weight: 400;
-  line-height: 35px;
-  width: 35%;
+  width: 40%;
 }
 
 .top-navbar-content span:hover {
