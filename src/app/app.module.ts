@@ -8,6 +8,7 @@ import { BannerComponent } from './banner/banner.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { GridComponent } from './grid/grid.component';
 import { QuickviewComponent } from './grid/quickview/quickview.component';
+import { FilterPipe } from './filter.pipe';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { QuickviewComponent } from './grid/quickview/quickview.component';
     BannerComponent,
     SidebarComponent,
     GridComponent,
-    QuickviewComponent
+    QuickviewComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule
