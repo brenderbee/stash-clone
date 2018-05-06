@@ -1,8 +1,8 @@
 <div class="card" *ngFor="let currentTeapot of gridTeapotList" (mouseenter)="showQuickviewButton(currentTeapot)" (mouseleave)="hideQuickviewButton()">
-  <div class="quickview" *ngIf="selectedTeapot===currentTeapot">
+  <div class="quickview" *ngIf="hoveredTeapot===currentTeapot" (click)="quickviewButtonClicked(currentTeapot)">
     <p>+QUICKVIEW</p>
   </div>
-  <app-quickview [childCurrentTeapot]="currentTeapot"></app-quickview>
+  <app-quickview [childCurrentTeapot]="currentTeapot" *ngIf="clickedTeapot===currentTeapot"></app-quickview>
   <div class="card-image">
     <img class="card-img-top" src="{{currentTeapot.image}}" alt="Card image">
   </div>

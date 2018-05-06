@@ -11,14 +11,19 @@ export class GridComponent {
   @Output() mouseEnterSender = new EventEmitter();
   @Output() mouseLeaveSender = new EventEmitter();
 
-  selectedTeapot = null;
+  hoveredTeapot = null;
+  clickedTeapot = null;
 
   showQuickviewButton(currentTeapot: Teapot) {
-    this.selectedTeapot = currentTeapot;
+    this.hoveredTeapot = currentTeapot;
   }
 
   hideQuickviewButton() {
-    this.selectedTeapot = null;
+    this.hoveredTeapot = null;
+  }
+
+  quickviewButtonClicked(currentTeapot) {
+    this.clickedTeapot = currentTeapot;
   }
 
 }
