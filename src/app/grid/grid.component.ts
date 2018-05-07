@@ -27,6 +27,10 @@ export class GridComponent {
     this.clickedTeapot = currentTeapot;
   }
 
+  quickviewOff() {
+    this.clickedTeapot = null;
+  }
+
   test(){
     console.log("this is the filter parameter at the grid " + this.childfilterParam);
   }

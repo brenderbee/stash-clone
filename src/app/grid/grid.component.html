@@ -2,7 +2,7 @@
   <div class="quickview" *ngIf="hoveredTeapot===currentTeapot" (click)="quickviewButtonClicked(currentTeapot)">
     <p>+QUICKVIEW</p>
   </div>
-  <app-quickview [childCurrentTeapot]="currentTeapot" *ngIf="clickedTeapot===currentTeapot"></app-quickview>
+  <app-quickview [childCurrentTeapot]="currentTeapot" *ngIf="clickedTeapot===currentTeapot" (quickviewOffSender)="quickviewOff()"></app-quickview>
   <div class="card-image">
     <img class="card-img-top" src="{{currentTeapot.image}}" alt="Card image">
   </div>

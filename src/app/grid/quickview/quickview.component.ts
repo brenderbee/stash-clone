@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Teapot } from '../../models/teapot.model';
 
 @Component({
@@ -8,4 +8,9 @@ import { Teapot } from '../../models/teapot.model';
 })
 export class QuickviewComponent {
   @Input() childCurrentTeapot: Teapot;
+  @Output() quickviewOffSender = new EventEmitter();
+
+  toggleQuickview() {
+    this.quickviewOffSender.emit();
+  }
 }
