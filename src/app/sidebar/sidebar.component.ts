@@ -1,4 +1,4 @@
-import { Component, Input} from '@angular/core';
+import { Component, Input, Output, EventEmitter} from '@angular/core';
 import { Filter } from '../models/filter.model';
 
 @Component({
@@ -8,6 +8,7 @@ import { Filter } from '../models/filter.model';
 })
 export class SidebarComponent {
   @Input() sidebarFilterList: Filter[];
+  @Output() filterParamSender = new EventEmitter();
 
   selectedFilter = null;
 
@@ -17,6 +18,11 @@ export class SidebarComponent {
 
   hideFilter() {
     this.selectedFilter = null;
+  }
+
+  toggleCheck(clickedParam) {
+   this.filterParamSender.emit(clickedParam);
+   console.log("this is at the sidebar " + clickedParam);
   }
 
 }

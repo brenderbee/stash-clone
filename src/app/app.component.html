@@ -2,8 +2,7 @@
   <app-header></app-header>
   <app-banner></app-banner>
   <div class="main-content">
-
-    <app-sidebar [sidebarFilterList]="masterFilterList"></app-sidebar>
+    <app-sidebar [sidebarFilterList]="masterFilterList" (filterParamSender)="filterParamSet($event)"></app-sidebar>
     <div class="grid">
       <div class="sort">
         <p>Sort by:</p>
@@ -12,7 +11,7 @@
           <option value="priceLowToHigh"><span>Price-Low to High</span></option>
         </select>
       </div>
-      <app-grid [gridTeapotList]="masterTeapotList"></app-grid>
+      <app-grid [gridTeapotList]="masterTeapotList" [childfilterParam]="filterParam"></app-grid>
     </div>
 
   </div>

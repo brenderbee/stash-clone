@@ -9,13 +9,20 @@ import {Teapot} from './models/teapot.model';
 
 export class FilterPipe implements PipeTransform {
 
-  transform(input: Teapot[]){
+  transform(input: Teapot[], filterParam){
     var output: Teapot[] = [];
-    for (var i = 0; i < input.length; i++) {
-      if (input[i].infuser === true) {
+    if (filterParam === 'with infuser') {
+      for (var i = 0; i < input.length; i++) {
+        if (input[i].infuser === true) {
+          output.push(input[i]);
+        }
+        return output;
+      }
+    } else {
+      for (var i = 0; i < input.length; i++) {
         output.push(input[i]);
       }
+      return output;
     }
-    return output;
   }
 }

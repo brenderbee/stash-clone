@@ -11,7 +11,7 @@
         </div>
         <form>
           <div *ngFor="let param of filter.params">
-            <input type="checkbox" name="filters" value="true">
+            <input type="checkbox" name="filters" value="{{param}}" (click)="toggleCheck(param)">
             <label for="filters">{{param}}</label>
           </div>
         </form>

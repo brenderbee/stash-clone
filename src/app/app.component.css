@@ -33,7 +33,7 @@ app-sidebar {
 }
 
 app-grid {
-  align-content: stretch;
+  align-content: space-around;
   float: right;
   align-items: center;
   background-color: #f6f6f6;

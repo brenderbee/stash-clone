@@ -72,4 +72,16 @@ export class AppComponent {
         ['asian', 'traditional', 'everyday', 'whimsical', 'glass']
     )
   ]
+  sort: string = "allTeapots";
+
+  onChange(optionFromMenu) {
+    this.sort = optionFromMenu;
+  }
+
+  filterParam = null;
+
+  filterParamSet(param) {
+    this.filterParam = param;
+    console.log("this is at the parent: " + this.filterParam);
+  }
 }

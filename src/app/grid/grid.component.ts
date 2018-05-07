@@ -8,6 +8,7 @@ import { Teapot } from '../models/teapot.model';
 })
 export class GridComponent {
   @Input() gridTeapotList: Teapot[];
+  @Input() childfilterParam: string;
   @Output() mouseEnterSender = new EventEmitter();
   @Output() mouseLeaveSender = new EventEmitter();
 
@@ -24,6 +25,10 @@ export class GridComponent {
 
   quickviewButtonClicked(currentTeapot) {
     this.clickedTeapot = currentTeapot;
+  }
+
+  test(){
+    console.log("this is the filter parameter at the grid " + this.childfilterParam);
   }
 
 }
