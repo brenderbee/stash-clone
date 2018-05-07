@@ -4,10 +4,27 @@
 
 .sidebar .filter-title {
   display: flex;
-  height: 21px;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 37px;
   font-weight: 500;
   font-size: 0.8rem;
   margin-left: 1.2rem;
+}
+
+.sidebar .filter-title .clear {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem;
+  color: white;
+  font-size: 0.6rem;
+  margin: 0;
+  background-color: #77c042;
+  cursor: pointer;
+}
+
+.sidebar .filter-title .clear:hover {
+  background-color: #68a939;
 }
 
 .sidebar .filters {

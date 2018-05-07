@@ -1,5 +1,8 @@
 <div class="sidebar">
-  <p class="filter-title">FILTER BY</p>
+  <div class="filter-title">
+    <p>FILTER BY</p>
+    <p class="clear" *ngIf="selectedParam">CLEAR ALL</p>
+  </div>
   <div class="filters">
     <div class="filter-individual" *ngFor="let filter of sidebarFilterList">
       <div class="filters-field" (click)="showFilter(filter)" *ngIf="selectedFilter===null || selectedFilter!==filter">

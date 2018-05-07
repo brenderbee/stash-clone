@@ -11,6 +11,7 @@ export class SidebarComponent {
   @Output() filterParamSender = new EventEmitter();
 
   selectedFilter = null;
+  selectedParam = null;
 
   showFilter(currentFilter: Filter) {
     this.selectedFilter = currentFilter;
@@ -21,7 +22,6 @@ export class SidebarComponent {
   }
 
   toggleCheck(clickedParam) {
-   this.filterParamSender.emit(clickedParam);
    console.log("this is at the sidebar " + clickedParam);
   }
 
