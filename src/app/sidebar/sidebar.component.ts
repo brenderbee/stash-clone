@@ -22,7 +22,15 @@ export class SidebarComponent {
   }
 
   toggleCheck(clickedParam) {
-   console.log("this is at the sidebar " + clickedParam);
+    this.selectedParam = clickedParam;
+    this.filterParamSender.emit(clickedParam);
+  }
+
+  clearFilter() {
+    this.selectedParam = null;
+    document.getElementById("with infuser").checked = false;
+    document.getElementById("with lid").checked = false;
+    this.filterParamSender.emit();
   }
 
 }

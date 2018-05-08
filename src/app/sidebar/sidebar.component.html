@@ -1,7 +1,7 @@
 <div class="sidebar">
   <div class="filter-title">
     <p>FILTER BY</p>
-    <p class="clear" *ngIf="selectedParam">CLEAR ALL</p>
+    <p class="clear" *ngIf="selectedParam" (click)="clearFilter()">CLEAR ALL</p>
   </div>
   <div class="filters">
     <div class="filter-individual" *ngFor="let filter of sidebarFilterList">
@@ -14,7 +14,7 @@
         </div>
         <form>
           <div *ngFor="let param of filter.params">
-            <input type="checkbox" name="filters" value="{{param}}" (click)="toggleCheck(param)">
+            <input id="{{param}}" type="checkbox" name="filters" value="{{param}}" (click)="toggleCheck(param)">
             <label for="filters">{{param}}</label>
           </div>
         </form>

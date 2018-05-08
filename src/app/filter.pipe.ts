@@ -18,7 +18,15 @@ export class FilterPipe implements PipeTransform {
         }
       }
       return output;
-    } else {
+    } else if (filterParam === 'with lid') {
+      for (var i = 0; i < input.length; i++) {
+        if (input[i].lid === true) {
+          output.push(input[i]);
+        }
+      }
+      return output;
+    }
+    else {
       return input;
     }
   }
