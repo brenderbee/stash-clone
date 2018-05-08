@@ -3,9 +3,9 @@
   border: none;
   display: flex;
   flex-direction: column;
-  margin-right: 0.33%;
-  margin-bottom: 0.33%;
-  width: 33%;
+  margin-right: 0.67%;
+  margin-bottom: 0.67%;
+  width: 32.33%;
 }
 
 .grid-title {

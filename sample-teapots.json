@@ -1,0 +1,45 @@
+{ "teapots": [{
+    "name": "stump teapot with infuser",
+    "description": "This teapot combines beauty and functionality. A bold-colored body with an easy-to-use stainless steel lid will make this teapot a favorite in your home.",
+    "colors": ["red", "carrot", "lime", "blue", "purple", "black", "white"],
+    "infuser": true,
+    "lid": true,
+    "capacity": 18,
+    "image": "https://cdn.shopify.com/s/files/1/0898/3392/products/41osluFjE7L_ffb727e5-e650-402d-b09d-fb438d7e7dbc_large.jpeg?v=1522694775",
+    "price": "24.95",
+    "rating": [1,2,3,4,5]
+  },
+  {
+    "name": "josephine teapot",
+    "description": "Start a conversation with a good friend over a cup (or two) poured from this tea lover's teapot. The bamboo handle and calm cream color speaks to the influence of its Danish design origins, influenced by current Nordic trends centered around simplicity, soft shapes, and serenity.",
+    "colors": [],
+    "infuser": false,
+    "lid": true,
+    "capacity": 18,
+    "image": "https://cdn.shopify.com/s/files/1/0898/3392/products/804040-Josephine-Teapot_large.jpg?v=1473358347",
+    "price": "19.95",
+    "rating": [1,2,3,4]
+  },
+  {
+    "name": "stoneware 2-cup teapot",
+    "description": "This quaint English-style teapot is perfect for your daily tea. The classic shape of the teapot allows the tea leaves to be gently swirled around as boiling water is added, brewing a delicious pot of tea. Choose your favorite color for yourself or gift to a friend. Made of durable stoneware, holds 16 oz.",
+    "colors": ["red", "aqua", "matte", "navy", "blue"],
+    "infuser": false,
+    "lid": true,
+    "capacity": 18,
+    "image": "https://cdn.shopify.com/s/files/1/0898/3392/products/804040-Josephine-Teapot_large.jpg?v=1473358347",
+    "price": "19.95",
+    "rating": [1,2,3,4]
+  },
+  {
+    "name": "owl tea set",
+    "description": "Whoo's got the cutest tea set? That would be you with this whimsical owl teapot and two matching cups. Quality is evident in the set's detailing which features a textured stoneware exterior that adds to the natural beauty of the pieces. Gift boxed. Teapot comes with a stainless steel infuser.",
+    "colors": [],
+    "infuser": true,
+    "lid": true,
+    "capacity": 14,
+    "image": "https://cdn.shopify.com/s/files/1/0898/3392/products/41tQsZoTIfL_large.jpeg?v=1449438074",
+    "price": "45.00",
+    "rating": [1,2,3,4]
+  }]
+}

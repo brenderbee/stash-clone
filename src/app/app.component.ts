@@ -17,7 +17,6 @@ export class AppComponent {
         18,
         'https://cdn.shopify.com/s/files/1/0898/3392/products/41osluFjE7L_ffb727e5-e650-402d-b09d-fb438d7e7dbc_large.jpeg?v=1522694775',
         '24.95',
-        800838,
         [1,2,3,4,5]
     ),
     new Teapot('josephine teapot',
@@ -28,7 +27,6 @@ export class AppComponent {
         32,
         'https://cdn.shopify.com/s/files/1/0898/3392/products/804040-Josephine-Teapot_large.jpg?v=1473358347',
         '19.95',
-        804040,
         [1,2,3,4]
     ),
     new Teapot('stoneware 2-cup teapot',
@@ -39,7 +37,6 @@ export class AppComponent {
         16,
         'https://cdn.shopify.com/s/files/1/0898/3392/products/B00THODF5M.01-A15D024ANKT1KE._SX1500_SCRMZZZZZZZ_V329881808_large.jpeg?v=1449440782',
         '10.95',
-        804013,
         [1,2,3,4,5]
     ),
     new Teapot('owl tea set',
@@ -50,7 +47,6 @@ export class AppComponent {
         14,
         'https://cdn.shopify.com/s/files/1/0898/3392/products/41tQsZoTIfL_large.jpeg?v=1449438074',
         '45.00',
-        800251,
         [1,2,3,4,5]
     )
   ]
