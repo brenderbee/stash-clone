@@ -11,11 +11,11 @@ export class TeapotService {
    }
 
   getTeapots() {
-    console.log("this is in the service.");
     return this.teapots;
   }
 
-  getTeapotById(teapotID: string){
-    return this.database.object('teapots/' + teapotID);
+  getTeapotById(teapotID){
+    console.log("this is getTeapotByID in the service: "+ teapotID)
+    return this.database.object('item-detail/' + teapotID);
   }
 }

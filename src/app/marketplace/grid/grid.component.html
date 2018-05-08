@@ -6,10 +6,10 @@
   <div class="card-image">
     <img class="card-img-top" src="{{teapot.images[0]}}" alt="Card image">
   </div>
-  <div class="card-body" (click)="test()">
+  <div class="card-body">
     <p class="grid-price">${{teapot.price}}</p>
     <div class="grid-title">
-      <a class="navbar-brand" routerLink="item-detail"><p class="grid-name">{{teapot.name}}</p></a>
+      <a class="navbar-brand" routerLink="item-detail" (click)="goToDetailPage(teapot)"><p class="grid-name">{{teapot.name}}</p></a>
       <p class="grid-rating"><i class="fa fa-star" *ngFor="let star of teapot.rating"></i></p>
     </div>
   </div>

@@ -10,7 +10,7 @@ const appRoutes: Routes = [
     component: MarketplaceComponent
   },
   {
-    path: 'item-detail',
+    path: 'item-detail:id',
     component: ItemDetailComponent
   }
 ];
