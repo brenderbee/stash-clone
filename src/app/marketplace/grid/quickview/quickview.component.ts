@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { Teapot } from '../../models/teapot.model';
+import { Teapot } from '../../../models/teapot.model';
 
 @Component({
   selector: 'app-quickview',

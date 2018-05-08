@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
-import { Teapot } from '../models/teapot.model';
-import { TeapotService } from '../teapot.service';
+import { Teapot } from '../../models/teapot.model';
+import { TeapotService } from '../../teapot.service';
 import { Router } from '@angular/router';
 import { FirebaseListObservable } from 'angularfire2/database';
 

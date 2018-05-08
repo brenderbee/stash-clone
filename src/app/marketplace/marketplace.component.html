@@ -1,0 +1,14 @@
+<app-banner></app-banner>
+<div class="main-content">
+  <app-sidebar [sidebarFilterList]="masterFilterList" (filterParamSender)="filterParamSet($event)"></app-sidebar>
+  <div class="grid">
+    <div class="sort">
+      <p>Sort by:</p>
+      <select (change)="onChange($event.target.value)">
+        <option value="allTeapots"><span>All Teapots</span></option>
+        <option value="priceLowToHigh"><span>Price-Low to High</span></option>
+      </select>
+    </div>
+    <app-grid [childfilterParam]="filterParam"></app-grid>
+  </div>
+</div>

@@ -16,6 +16,7 @@ import { ItemDetailComponent } from './item-detail/item-detail.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { MarketplaceComponent } from './marketplace/marketplace.component';
 
 
 export const firebaseConfig = {
@@ -34,7 +35,8 @@ export const firebaseConfig = {
     GridComponent,
     QuickviewComponent,
     FilterPipe,
-    ItemDetailComponent
+    ItemDetailComponent,
+    MarketplaceComponent
   ],
   imports: [
     BrowserModule,

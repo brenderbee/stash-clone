@@ -56,11 +56,26 @@ _This project was generated with [Angular CLI](https://github.com/angular/angula
     $ npm install -g karma-cli
     ```
 
+#### API Key
+  You will need to make a Firebase account...
+
+  Once you have an API key do the following:
+    * Create a api-keys.ts file in the src/app/ directory of this project.
+    * Add the API key in the api-keys.ts file as shown:
+    ```
+    export var masterFirebaseConfig = {
+      apiKey: "xxxx",
+      authDomain: "xxxx.firebaseapp.com",
+      databaseURL: "https://xxxx.firebaseio.com",
+      storageBucket: "xxxx.appspot.com",
+      messagingSenderId: "xxxx"
+    };
+    ```
 
 #### Development server
   * Run the following for a dev server:
     ```
-    $ ng serve
+    $ ng serve --open
     ```
   * Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
@@ -118,15 +133,15 @@ _Do not contact anyone with questions or comments regarding this project._
   * Output: "Teapots"
 
 ### User Stories
-1. As a user, I want to see all of the teapots available for purchase.
-2. As a user, I want to click a teapot and see a summary of that teapot.
-3. As a user, I want to see the price of a selected teapot.
-4. As a user, I want to add a teapot to my shopping cart.
-5. As a user, I want to be able to add multiple teapots to my shopping chart.
-6. As a user, I want to see my shopping cart update when a new teapot is added to it.
+1. As a user, I want to see all of the teapots available for purchase. (MET)
+2. As a user, I want to click a teapot and see a summary of that teapot. (MET)
+3. As a user, I want to see the price of a selected teapot. (MET)
+4. As a user, I want to add a teapot to my shopping cart. (FUTURE FEATURE)
+5. As a user, I want to be able to add multiple teapots to my shopping chart. (FUTURE FEATURE)
+6. As a user, I want to see my shopping cart update when a new teapot is added to it. (FUTURE FEATURE)
 7. As a user, I want to sort the available teapots by price (ascending and descending).
-8. As a user, I want to sort the available teapots by best-selling.
-9. As a user, I want to sort the available teapots by rating.
+8. As a user, I want to sort the available teapots by best-selling. (FUTURE FEATURE)
+9. As a user, I want to sort the available teapots by rating. (FUTURE FEATURE)
 
 ### License
 Copyright (c) 2018 ****_Brenda Franco_****
