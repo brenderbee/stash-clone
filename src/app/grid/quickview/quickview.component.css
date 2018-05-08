@@ -52,8 +52,13 @@
   margin-bottom: 1rem;
 }
 
+.quickview-modal-preview {
+  margin: 10% auto;
+  width: 85%;
+}
+
 .quickview-modal-preview img {
-  margin: 20% auto;
+  margin: 10% auto;
   width: 85%;
 }
 
@@ -108,4 +113,9 @@
 .quick-cart span {
   font-size: 1.6rem;
   padding: 0 1rem;
+}
+
+.carousel-control-prev, .carousel-control-next i {
+  color: black;
+  font-size: 3rem;
 }
