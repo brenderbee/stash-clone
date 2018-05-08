@@ -4,10 +4,10 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { BannerComponent } from './banner/banner.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { GridComponent } from './grid/grid.component';
-import { QuickviewComponent } from './grid/quickview/quickview.component';
+import { BannerComponent } from './marketplace/banner/banner.component';
+import { SidebarComponent } from './marketplace/sidebar/sidebar.component';
+import { GridComponent } from './marketplace/grid/grid.component';
+import { QuickviewComponent } from './marketplace/grid/quickview/quickview.component';
 import { FilterPipe } from './filter.pipe';
 
 import { routing } from './app.routing';

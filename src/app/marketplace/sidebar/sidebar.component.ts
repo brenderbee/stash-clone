@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter} from '@angular/core';
-import { Filter } from '../models/filter.model';
+import { Filter } from '../../models/filter.model';
 
 @Component({
   selector: 'app-sidebar',
