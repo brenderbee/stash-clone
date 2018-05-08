@@ -5,7 +5,9 @@
     "infuser": true,
     "lid": true,
     "capacity": 18,
-    "image": "https://cdn.shopify.com/s/files/1/0898/3392/products/41osluFjE7L_ffb727e5-e650-402d-b09d-fb438d7e7dbc_large.jpeg?v=1522694775",
+    "images": ["https://cdn.shopify.com/s/files/1/0898/3392/products/41osluFjE7L_ffb727e5-e650-402d-b09d-fb438d7e7dbc_large.jpeg?v=1522694775",
+    "https://cdn.shopify.com/s/files/1/0898/3392/products/41-PT93aK6L_a9955c58-6fcb-436e-8f82-bd94702b0f7b_large.jpeg?v=1522694775",
+    "https://cdn.shopify.com/s/files/1/0898/3392/products/41aPJ7Lff2L_15e7ce10-145e-4493-ae23-018dc9955ca9_large.jpeg?v=1522694775"],
     "price": "24.95",
     "rating": [1,2,3,4,5]
   },
@@ -16,7 +18,7 @@
     "infuser": false,
     "lid": true,
     "capacity": 32,
-    "image": "https://cdn.shopify.com/s/files/1/0898/3392/products/804040-Josephine-Teapot_large.jpg?v=1473358347",
+    "images": ["https://cdn.shopify.com/s/files/1/0898/3392/products/804040-Josephine-Teapot_large.jpg?v=1473358347"],
     "price": "19.95",
     "rating": [1,2,3,4]
   },
@@ -27,7 +29,7 @@
     "infuser": false,
     "lid": true,
     "capacity": 16,
-    "image": "https://cdn.shopify.com/s/files/1/0898/3392/products/B00THODF5M.01-A15D024ANKT1KE._SX1500_SCRMZZZZZZZ_V329881808_large.jpeg?v=1449440782",
+    "images": ["https://cdn.shopify.com/s/files/1/0898/3392/products/B00THODF5M.01-A15D024ANKT1KE._SX1500_SCRMZZZZZZZ_V329881808_large.jpeg?v=1449440782"],
     "price": "10.95",
     "rating": [1,2,3,4]
   },
@@ -38,7 +40,7 @@
     "infuser": true,
     "lid": true,
     "capacity": 14,
-    "image": "https://cdn.shopify.com/s/files/1/0898/3392/products/41tQsZoTIfL_large.jpeg?v=1449438074",
+    "images": ["https://cdn.shopify.com/s/files/1/0898/3392/products/41tQsZoTIfL_large.jpeg?v=1449438074"],
     "price": "45.00",
     "rating": [1,2,3,4]
   }]

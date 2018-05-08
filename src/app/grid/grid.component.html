@@ -4,7 +4,7 @@
   </div>
   <app-quickview [childteapot]="teapot" *ngIf="clickedTeapot===teapot" (quickviewOffSender)="quickviewOff()"></app-quickview>
   <div class="card-image">
-    <img class="card-img-top" src="{{teapot.image}}" alt="Card image">
+    <img class="card-img-top" src="{{teapot.images[0]}}" alt="Card image">
   </div>
   <div class="card-body" (click)="test()">
     <p class="grid-price">${{teapot.price}}</p>
