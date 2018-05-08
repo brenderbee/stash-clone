@@ -16,13 +16,16 @@
 
 .quickview-modal-left {
   display: flex;
+  flex: 1;
   flex-direction: column;
+  margin: 1rem 1.5rem;
 }
 
 .quickview-modal-right {
   display: flex;
   flex-direction: column;
   flex: 1;
+  margin: 1rem 1.5rem;
   width: 100%;
 }
 
@@ -38,8 +41,15 @@
   justify-content: flex-end;
 }
 
+.quickview-modal-summary h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
 .quickview-modal-summary h3 {
-  font-size: 1rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
 }
 
 .quickview-modal-preview img {
@@ -52,11 +62,50 @@
   color: #838383;
 }
 
-.quickview-modal-summary h2 {
-  font-size: 2rem;
-}
-
 .quickview-modal-summary .colors {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #f8f8f8;
+  border-right: 2px solid #f8f8f8;
+  border-left: 2px solid #f8f8f8;
+}
+
+.quickview-modal-summary .colors:hover {
+  color: #75c044;
+  border: 2px solid #75c044;
+}
+
+.quickview-modal-summary .colors p {
+  display: block;
+  margin: 0;
+  padding: 1rem;
+  scroll-behavior: auto;
+}
+
+.quick-cart {
+  display: flex;
+  align-items: center;
+}
+
+.quick-cart button {
+  flex: 1;
+  height: 50px;
+  padding: 0;
+  margin-top: 1rem;
+  line-height: 3.125rem;
+  letter-spacing: .1rem;
+  background-color: #3ebc8d;
+  color: #fff;
+  background-image: linear-gradient(#3ebc8d,#39ac81);
+}
+
+.quick-cart button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(#39ac81, #3ebc8d);
+}
+
+.quick-cart span {
+  font-size: 1.6rem;
+  padding: 0 1rem;
 }
