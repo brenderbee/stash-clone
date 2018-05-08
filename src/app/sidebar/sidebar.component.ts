@@ -28,8 +28,8 @@ export class SidebarComponent {
 
   clearFilter() {
     this.selectedParam = null;
-    document.getElementById("with infuser").checked = false;
-    document.getElementById("with lid").checked = false;
+    // document.getElementById("with infuser").checked = false;
+    // document.getElementById("with lid").checked = false;
     this.filterParamSender.emit();
   }
 
