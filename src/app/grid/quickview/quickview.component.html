@@ -2,7 +2,7 @@
   <div class="quickview-modal-left">
     <div class="quickview-modal-preview">
       <span><i class="fa fa-arrow-left"></i></span>
-      <img src="{{childCurrentTeapot.image}}" alt="{{childCurrentTeapot.name}} image">
+      <img src="{{childteapot.image}}" alt="{{childteapot.name}} image">
       <span><i class="fa fa-arrow-right"></i></span>
     </div>
   </div>
@@ -11,15 +11,15 @@
       <span><i class="fa fa-remove"></i></span>
     </div>
     <div class="quickview-modal-summary">
-      <p>Item: #{{childCurrentTeapot.id}}</p>
-      <h2>{{childCurrentTeapot.name }}</h2>
-      <h3 *ngIf="childCurrentTeapot.colors.length > 0">Select a Color</h3>
-      <div class="colors" *ngFor="let color of childCurrentTeapot.colors">
+      <p>Item: #{{childteapot.$key}}</p>
+      <h2>{{childteapot.name }}</h2>
+      <h3 *ngIf="childteapot.colors.length > 0">Select a Color</h3>
+      <div class="colors" *ngFor="let color of childteapot.colors">
         <p>{{color}}</p>
-        <p>$ {{childCurrentTeapot.price}}</p>
+        <p>$ {{childteapot.price}}</p>
       </div>
       <div class="quick-cart">
-        <span>$ {{childCurrentTeapot.price}}</span>
+        <span>$ {{childteapot.price}}</span>
         <button type="button" name="button">ADD TO CART</button>
       </div>
     </div>

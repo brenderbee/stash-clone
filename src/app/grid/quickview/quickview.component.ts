@@ -7,7 +7,7 @@ import { Teapot } from '../../models/teapot.model';
   styleUrls: ['./quickview.component.css']
 })
 export class QuickviewComponent {
-  @Input() childCurrentTeapot: Teapot;
+  @Input() childteapot: Teapot;
   @Output() quickviewOffSender = new EventEmitter();
 
   toggleQuickview() {

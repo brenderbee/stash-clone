@@ -1,16 +1,16 @@
-<div class="card" *ngFor="let currentTeapot of gridTeapotList | filter:childfilterParam" (mouseenter)="showQuickviewButton(currentTeapot)" (mouseleave)="hideQuickviewButton()">
-  <div class="quickview" *ngIf="hoveredTeapot===currentTeapot" (click)="quickviewButtonClicked(currentTeapot)">
+<div class="card" *ngFor="let teapot of teapots | async | filter:childfilterParam" (mouseenter)="showQuickviewButton(teapot)" (mouseleave)="hideQuickviewButton()">
+  <div class="quickview" *ngIf="hoveredTeapot===teapot" (click)="quickviewButtonClicked(teapot)">
     <p>+QUICKVIEW</p>
   </div>
-  <app-quickview [childCurrentTeapot]="currentTeapot" *ngIf="clickedTeapot===currentTeapot" (quickviewOffSender)="quickviewOff()"></app-quickview>
+  <app-quickview [childteapot]="teapot" *ngIf="clickedTeapot===teapot" (quickviewOffSender)="quickviewOff()"></app-quickview>
   <div class="card-image">
-    <img class="card-img-top" src="{{currentTeapot.image}}" alt="Card image">
+    <img class="card-img-top" src="{{teapot.image}}" alt="Card image">
   </div>
   <div class="card-body" (click)="test()">
-    <p class="grid-price">${{currentTeapot.price}}</p>
+    <p class="grid-price">${{teapot.price}}</p>
     <div class="grid-title">
-      <a class="navbar-brand" routerLink="item-detail"><p class="grid-name">{{currentTeapot.name}}</p></a>
-      <p class="grid-rating"><i class="fa fa-star" *ngFor="let star of currentTeapot.rating"></i></p>
+      <a class="navbar-brand" routerLink="item-detail"><p class="grid-name">{{teapot.name}}</p></a>
+      <p class="grid-rating"><i class="fa fa-star" *ngFor="let star of teapot.rating"></i></p>
     </div>
   </div>
 </div>
