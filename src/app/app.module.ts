@@ -10,6 +10,20 @@ import { GridComponent } from './grid/grid.component';
 import { QuickviewComponent } from './grid/quickview/quickview.component';
 import { FilterPipe } from './filter.pipe';
 
+import { routing } from './app.routing';
+import { ItemDetailComponent } from './item-detail/item-detail.component';
+
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 @NgModule({
   declarations: [
@@ -19,10 +33,14 @@ import { FilterPipe } from './filter.pipe';
     SidebarComponent,
     GridComponent,
     QuickviewComponent,
-    FilterPipe
+    FilterPipe,
+    ItemDetailComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

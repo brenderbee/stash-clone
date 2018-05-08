@@ -15,6 +15,10 @@ app-banner {
   margin-bottom: 0.875rem;
 }
 
+router-outlet {
+  display: block;
+}
+
 main-content {
   display: flex;
   flex-direction: row;
