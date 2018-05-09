@@ -21,11 +21,11 @@ export class ItemDetailComponent implements OnInit {
     private teapotService: TeapotService) { }
 
     ngOnInit() {
-      console.log("this is the teapot at the detail page on init: " + this.teapotToDisplay)
       this.route.params.forEach((urlParameters) => {
         this.teapotId = urlParameters['id'];
       });
       this.teapotToDisplay = this.teapotService.getTeapotById(this.teapotId);
+      console.log("this is the teapot at the detail page on init: " + this.teapotToDisplay);
     }
 
 }

@@ -14,8 +14,8 @@ export class TeapotService {
     return this.teapots;
   }
 
-  getTeapotById(teapotID){
+  getTeapotById(teapotID: string){
     console.log("this is getTeapotByID in the service: "+ teapotID)
-    return this.database.object('item-detail/' + teapotID);
+    return this.database.object('teapots/' + teapotID);
   }
 }
