@@ -33,4 +33,11 @@ export class SidebarComponent {
     this.filterParamSender.emit();
   }
 
+  ngOnInit() {
+    let button = document.querySelector('filters-field');
+    button.addEventListener('click', function(){
+    	document.querySelector('.closed').classList.toggle('open');
+    });
+  };
+
 }
