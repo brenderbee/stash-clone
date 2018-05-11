@@ -2,20 +2,22 @@
   <div class="cart-item-total">
     <div class="cart-item" *ngFor="let item of items">
       <img src="{{item.images[0]}}" alt="Image of {{item.name}}">
-      <div class="cart-item-name">
-        <h4>{{item.name}}</h4>
-        <p>item #: {{item.$key}}</p>
-      </div>
-      <div class="cart-item-desc">
-        <h5>Item Price</h5>
-        <p>${{item.price}}</p>
+      <div class="cart-item-all">
+        <div class="cart-item-name">
+          <h4>{{item.name}}</h4>
+          <p>item #: {{item.$key}}</p>
+        </div>
+        <div class="cart-item-desc">
+          <h5>Item Price</h5>
+          <p>${{item.price}}</p>
+        </div>
       </div>
     </div>
   </div>
   <div class="cart-payment">
     <div class="cart-payment-title">
       <h4>Subtotal</h4>
-      <h4>${{subtotal(items)}}</h4>
+      <h4 class="cart-payment-subtotal">$ {{subtotal(items)}}</h4>
     </div>
     <button type="button" name="button">PROCEED TO CHECKOUT</button>
   </div>

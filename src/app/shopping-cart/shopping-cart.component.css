@@ -21,11 +21,27 @@ h4, p {
   justify-content: space-between;
   padding: 1.75rem;
   border-bottom: 1px solid #f1f1f1;
+  color: #373737;
 }
 
 .cart-item img {
   height: 5rem;
   width: 5rem;
+}
+
+.cart-item-all {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.cart-item-name p {
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.cart-item-desc h5 {
+  font-size: 0.8rem;
 }
 
 .cart-payment {
@@ -40,6 +56,12 @@ h4, p {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.cart-payment-subtotal {
+  color:#3ebc8d;
+  font-weight: 300;
 }
 
 .cart-payment button {
