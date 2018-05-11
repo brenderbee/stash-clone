@@ -31,6 +31,7 @@ export class MarketplaceComponent implements OnInit {
         ['asian', 'traditional', 'everyday', 'whimsical', 'glass']
     )
   ]
+  
   sort: string = "allTeapots";
 
   onChange(optionFromMenu) {
