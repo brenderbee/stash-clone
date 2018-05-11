@@ -25,14 +25,12 @@ export class GridComponent implements OnInit {
 
   ngOnInit(){
     this.teapots = this.teapotService.getTeapots();
-    console.log("this is the teapots array in the grid component: " + this.teapots);
   }
 
   hoveredTeapot = null;
   clickedTeapot = null;
 
   goToDetailPage(clickedTeapot) {
-    console.log("this is the object sent when grid is clicked: " + clickedTeapot)
     this.router.navigate(['item-detail', clickedTeapot.$key]);
   };
 

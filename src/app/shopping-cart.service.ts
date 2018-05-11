@@ -12,7 +12,9 @@ export class ShoppingCartService {
     return this.items;
   }
 
-  pushItem(clickedTeapot){
+  pushItem(clickedTeapot: Teapot){
+    console.log("this: " , this);
+    console.log("items: " , this.items);
     return this.items.push(clickedTeapot);
   }
 

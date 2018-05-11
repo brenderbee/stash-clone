@@ -22,4 +22,12 @@ export class QuickviewComponent implements OnInit {
   toggleQuickview() {
     this.quickviewOffSender.emit();
   }
+
+  addToCart(clickedTeapot) {
+    console.log(this);
+    // this.testItems.push(clickedTeapot);
+    this.shoppingCartService.pushItem(clickedTeapot);
+    // console.log("current shoppingcart: " + this.items[0].name);
+    // console.log(clickedTeapot);
+  }
 }
