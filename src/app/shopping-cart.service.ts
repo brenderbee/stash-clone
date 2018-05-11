@@ -13,9 +13,9 @@ export class ShoppingCartService {
   }
 
   pushItem(clickedTeapot: Teapot){
-    console.log("service this: " , this);
-    console.log("service this.items: " , this.items);
-    return this.items.push(clickedTeapot);
+    let temp = this.items.push(clickedTeapot)
+    console.log(temp);
+    return temp;
   }
 
 }
