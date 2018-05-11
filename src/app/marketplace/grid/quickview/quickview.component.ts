@@ -11,23 +11,19 @@ import { ShoppingCartService } from '../../../shopping-cart.service';
 export class QuickviewComponent implements OnInit {
   @Input() childteapot: Teapot;
   @Output() quickviewOffSender = new EventEmitter();
-  items: Teapot[];
+  items: Teapot[] = [];
 
   constructor(public shoppingCartService: ShoppingCartService) {}
 
   ngOnInit(){
-    this.items = this.shoppingCartService.getItems();
+    // this.items = this.shoppingCartService.getItems();
   }
 
   toggleQuickview() {
     this.quickviewOffSender.emit();
   }
 
-  addToCart(clickedTeapot) {
-    console.log(this);
-    // this.testItems.push(clickedTeapot);
+  addToCart(clickedTeapot: Teapot) {
     this.shoppingCartService.pushItem(clickedTeapot);
-    // console.log("current shoppingcart: " + this.items[0].name);
-    // console.log(clickedTeapot);
   }
 }

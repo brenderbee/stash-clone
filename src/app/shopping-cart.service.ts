@@ -4,7 +4,7 @@ import { Teapot } from './models/teapot.model';
 @Injectable()
 export class ShoppingCartService {
 
-  items: Teapot[];
+  items: Teapot[] = [];
 
   constructor() {}
 
@@ -13,8 +13,8 @@ export class ShoppingCartService {
   }
 
   pushItem(clickedTeapot: Teapot){
-    console.log("this: " , this);
-    console.log("items: " , this.items);
+    console.log("service this: " , this);
+    console.log("service this.items: " , this.items);
     return this.items.push(clickedTeapot);
   }
 
