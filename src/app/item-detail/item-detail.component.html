@@ -38,7 +38,7 @@
       </div>
       <div class="quick-cart">
         <span>$ {{(teapotToDisplay | async)?.price}}</span>
-        <button type="button" name="button">ADD TO CART</button>
+        <button type="button" name="button" (click)="addToCart(teapotToDisplay)">ADD TO CART</button>
       </div>
     </div>
   </div>
