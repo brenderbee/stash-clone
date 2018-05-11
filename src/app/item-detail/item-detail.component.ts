@@ -15,7 +15,7 @@ import { ShoppingCartService } from './../shopping-cart.service';
 export class ItemDetailComponent implements OnInit {
   teapotId: string;
   teapotToDisplay;
-  items: Teapot[] = [];
+  // items: Teapot[] = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -28,10 +28,11 @@ export class ItemDetailComponent implements OnInit {
         this.teapotId = urlParameters['id'];
       });
       this.teapotToDisplay = this.teapotService.getTeapotById(this.teapotId);
-      console.log("this is the teapot at the detail page on init: " + this.teapotToDisplay);
     }
 
     addToCart(clickedTeapot: Teapot) {
+      console.log('Teapot is:', clickedTeapot);
+      debugger
       this.shoppingCartService.pushItem(clickedTeapot);
     }
 
