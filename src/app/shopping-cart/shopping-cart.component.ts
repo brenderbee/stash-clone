@@ -18,4 +18,12 @@ export class ShoppingCartComponent implements OnInit {
     this.items = this.shoppingCartService.getItems();
   }
 
+  subtotal(array) {
+    let total: number = 0;
+    array.forEach(function(item) {
+      total += parseFloat(item.price);
+    });
+    return total.toFixed(2);
+  }
+
 }

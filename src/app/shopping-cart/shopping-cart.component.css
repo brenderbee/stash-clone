@@ -9,20 +9,18 @@ h4, p {
   margin-top: 150px;
   margin-left: 5%;
   margin-right: 5%;
-  background-color: white;
-  border: 1px solid black;
 }
 
 .cart-item-total {
   width: 70%;
+  background-color: white;
 }
 
 .cart-item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  border: 1px solid black;
   padding: 1.75rem;
+  border-bottom: 1px solid #f1f1f1;
 }
 
 .cart-item img {
@@ -34,9 +32,8 @@ h4, p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 30%;
-  border: 1px solid red;
   padding: 3rem;
+  width: 30%;
 }
 
 .cart-payment-title {
