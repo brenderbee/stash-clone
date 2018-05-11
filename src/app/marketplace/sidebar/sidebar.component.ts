@@ -38,6 +38,6 @@ export class SidebarComponent {
   //   button.addEventListener('click', function(){
   //   	document.querySelector('.closed').classList.toggle('open');
   //   });
-  };
+  // };
 
 }
