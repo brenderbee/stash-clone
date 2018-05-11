@@ -5,6 +5,7 @@ import { Teapot } from './models/teapot.model';
 export class ShoppingCartService {
 
   items: Teapot[] = [];
+  numbers: Array<number> = [1,2,3,4];
 
   constructor() {}
 
@@ -12,9 +13,13 @@ export class ShoppingCartService {
     return this.items;
   }
 
+  getTestNumbers() {
+    return this.numbers;
+  }
+
   pushItem(clickedTeapot: Teapot){
-    console.log(this.items);
-    return this.items.push(clickedTeapot)
+    console.log("this is at the service: " , this.items);
+    return this.items.push(clickedTeapot);
   }
 
 }
