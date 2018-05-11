@@ -13,9 +13,8 @@ export class ShoppingCartService {
   }
 
   pushItem(clickedTeapot: Teapot){
-    let temp = this.items.push(clickedTeapot)
-    console.log(temp);
-    return temp;
+    console.log(this.items);
+    return this.items.push(clickedTeapot)
   }
 
 }

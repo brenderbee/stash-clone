@@ -11,12 +11,11 @@ import { ShoppingCartService } from '../../../shopping-cart.service';
 export class QuickviewComponent implements OnInit {
   @Input() childteapot: Teapot;
   @Output() quickviewOffSender = new EventEmitter();
-  items: Teapot[];
 
   constructor(public shoppingCartService: ShoppingCartService) {}
 
   ngOnInit(){
-    this.items = this.shoppingCartService.getItems();
+    
   }
 
   toggleQuickview() {
