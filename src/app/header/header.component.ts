@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Teapot } from './../models/teapot.model';
 import { ShoppingCartService } from './../shopping-cart.service';
 
-
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
