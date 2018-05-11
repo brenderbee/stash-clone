@@ -7,8 +7,6 @@ export class ShoppingCartService {
   items: Teapot[] = [];
   numbers: Array<number> = [1,2,3,4];
 
-  constructor() {}
-
   getItems() {
     return this.items;
   }

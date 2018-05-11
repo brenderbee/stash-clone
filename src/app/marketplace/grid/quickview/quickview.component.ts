@@ -15,7 +15,7 @@ export class QuickviewComponent implements OnInit {
   constructor(public shoppingCartService: ShoppingCartService) {}
 
   ngOnInit(){
-    
+
   }
 
   toggleQuickview() {
