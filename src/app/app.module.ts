@@ -18,6 +18,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 
 
 export const firebaseConfig = {
@@ -38,7 +39,8 @@ export const firebaseConfig = {
     FilterPipe,
     ItemDetailComponent,
     MarketplaceComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    ComingSoonComponent
   ],
   imports: [
     BrowserModule,
