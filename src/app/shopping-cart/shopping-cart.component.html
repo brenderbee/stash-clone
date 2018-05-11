@@ -1,8 +1,41 @@
-<div class="cart" *ngIf="items.length > 0">
-  <div class="cart item">
-    <p>cart has an item</p>
+<!-- <div class="cart" *ngIf="items.length > 0">
+  <div class="cart item" *ngFor="let item of items">
+    <h4>{{item.name}}</h4>
+    <p>$ {{item.price}}</p>
   </div>
 </div>
 <div class="cart empty" *ngIf="items.length < 1">
   <p>Your cart is empty</p>
+</div> -->
+
+<div class="cart">
+  <div class="cart-item">
+    <img src="https://cdn.shopify.com/s/files/1/0898/3392/products/804045-Rockingham-Brown-Betty-10-Cup-Teapot_large.jpg?v=1476826553" alt="">
+    <div class="cart-item-name">
+      <h4>Temp Name</h4>
+      <p>item #: 00000</p>
+    </div>
+    <div class="cart-item-desc">
+      <h5>Item Price</h5>
+      <p>$19.95</p>
+    </div>
+  </div>
+  <div class="cart-item">
+    <img src="https://cdn.shopify.com/s/files/1/0898/3392/products/804045-Rockingham-Brown-Betty-10-Cup-Teapot_large.jpg?v=1476826553" alt="">
+    <div class="cart-item-name">
+      <h4>Temp Name</h4>
+      <p>item #: 00000</p>
+    </div>
+    <div class="cart-item-desc">
+      <h5>Item Price</h5>
+      <p>$19.95</p>
+    </div>
+  </div>
+  <div class="cart-payment">
+    <div class="cart-payment-title">
+      <h4>Subtotal</h4>
+      <h4>$20.00</h4>
+    </div>
+    <button type="button" name="button">PROCEED TO CHECKOUT</button>
+  </div>
 </div>
