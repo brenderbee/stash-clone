@@ -103,10 +103,18 @@
   background-color: #77c042;
   font-size: 0.7rem;
   font-weight: 400;
-  width: 40%;
+  width: 100%;
 }
 
 .top-navbar-content span:hover {
   background-color: #68a939;
   transition: 0.3s;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  display: flex;
 }
