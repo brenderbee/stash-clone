@@ -116,6 +116,12 @@ _This project was generated with [Angular CLI](https://github.com/angular/angula
     ```
 
 ## Known Bugs
+_Adding an item to cart works from the quickview modal, but not the dynamically routed detail page._
+_Sort select box does not work._
+_Project does not differentiate between selected teapot colors._
+_If particular teapot has many colors, the quickview does not scroll to accommodate those colors._
+
+## Contact
 _Do not contact anyone with questions or comments regarding this project._
 
 ## Technologies Used
@@ -136,12 +142,14 @@ _Do not contact anyone with questions or comments regarding this project._
 1. As a user, I want to see all of the teapots available for purchase. (MET)
 2. As a user, I want to click a teapot and see a summary of that teapot. (MET)
 3. As a user, I want to see the price of a selected teapot. (MET)
-4. As a user, I want to add a teapot to my shopping cart. (FUTURE FEATURE)
-5. As a user, I want to be able to add multiple teapots to my shopping chart. (FUTURE FEATURE)
-6. As a user, I want to see my shopping cart update when a new teapot is added to it. (FUTURE FEATURE)
-7. As a user, I want to sort the available teapots by price (ascending and descending).
-8. As a user, I want to sort the available teapots by best-selling. (FUTURE FEATURE)
-9. As a user, I want to sort the available teapots by rating. (FUTURE FEATURE)
+4. As a user, I want to add a teapot to my shopping cart from the quickview modal. (MET)
+5. As a user, I want to add a teapot to my shopping cart from the detail view. (FUTURE FEATURE)
+6. As a user, I want to be able to add multiple teapots to my shopping chart. (MET via quickview)
+7. As a user, I want to see my shopping cart update when a new teapot is added to it. (MET via quickview)
+8. As a user, I want to sort the available teapots by price (ascending and descending). (FUTURE FEATURE)
+9. As a user, I want to sort the available teapots by best-selling. (FUTURE FEATURE)
+10. As a user, I want to sort the available teapots by rating. (FUTURE FEATURE)
+11. As a user, I want to delete items from shopping cart. (FUTURE FEATURE)
 
 ### License
 Copyright (c) 2018 ****_Brenda Franco_****
