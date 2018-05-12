@@ -11,6 +11,8 @@ _This webpage application is designed to clone the
 
 _This project uses Angular CLI as a framework. All dependencies required are included in this project. Node and npm are required to run Angular CLI v1.6.5._
 
+_View deployed site: https://stash-clone.firebaseapp.com/_
+
 _This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5._
 
 ## Setup/Installation Requirements
