@@ -31,8 +31,6 @@ export class ItemDetailComponent implements OnInit {
     }
 
     addToCart(clickedTeapot: Teapot) {
-      console.log('Teapot is:', clickedTeapot);
-      debugger
       this.shoppingCartService.pushItem(clickedTeapot);
     }
 
