@@ -22,8 +22,13 @@ export class SidebarComponent {
   }
 
   toggleCheck(clickedParam) {
-    this.selectedParam = clickedParam;
-    this.filterParamSender.emit(clickedParam);
+    if (this.selectedParam === null) {
+      this.selectedParam = clickedParam;
+      this.filterParamSender.emit(clickedParam)
+    } else {
+      this.selectedParam = null;
+      this.filterParamSender.emit(null);
+    }
   }
 
   clearFilter() {
