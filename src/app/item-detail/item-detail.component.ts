@@ -15,7 +15,6 @@ import { ShoppingCartService } from './../shopping-cart.service';
 export class ItemDetailComponent implements OnInit {
   teapotId: string;
   teapotToDisplay;
-  // items: Teapot[] = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -23,36 +22,18 @@ export class ItemDetailComponent implements OnInit {
     private teapotService: TeapotService,
     public shoppingCartService: ShoppingCartService) { }
 
-    // ngOnInit() {
-    //   this.route.params.forEach((urlParameters) => {
-    //     this.teapotId = urlParameters['id'];
-    //   });
-    //   this.teapotToDisplay = this.teapotService.getTeapotById(this.teapotId);
-    //   console.log("this is the teapot OnInit: " , this.teapotToDisplay);
-    // }
-    ngOnInit() {
-      this.route.params.forEach((urlParameters) => {
-        this.teapotId = urlParameters['id'];
-      });
-      this.teapotService.getTeapotById(this.teapotId).subscribe(dataLastEmittedFromObserver => {
-        this.teapotToDisplay = dataLastEmittedFromObserver;
-        console.log("this is the teapot OnInit: " , this.teapotToDisplay);
-      });
-    }
+  ngOnInit() {
+    this.route.params.forEach((urlParameters) => {
+      this.teapotId = urlParameters['id'];
+    });
+    this.teapotService.getTeapotById(this.teapotId).subscribe(dataLastEmittedFromObserver => {
+      this.teapotToDisplay = dataLastEmittedFromObserver;
+      console.log("this is the teapot OnInit: " , this.teapotToDisplay);
+    });
+  }
 
-    // ngOnInit() {
-    //   this.route.params.forEach((urlParametersArray) => {
-    //     this.albumId = urlParametersArray['id'];
-    //   });
-    //   this.albumService.getAlbumById(this.albumId).subscribe(dataLastEmittedFromObserver => {
-    //     this.albumToDisplay = dataLastEmittedFromObserver;
-    //
-    //     console.log(this.albumToDisplay);
-    //   })
-    // }
-
-    addToCart(clickedTeapot: Teapot) {
-      this.shoppingCartService.pushItem(clickedTeapot);
-    }
+  addToCart(clickedTeapot: Teapot) {
+    this.shoppingCartService.pushItem(clickedTeapot);
+  }
 
 }
