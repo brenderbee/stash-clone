@@ -22,6 +22,7 @@ export class SidebarComponent {
   }
 
   toggleCheck(clickedParam) {
+    console.log("you checked " , clickedParam);
     if (this.selectedParam === null) {
       this.selectedParam = clickedParam;
       this.filterParamSender.emit(clickedParam)

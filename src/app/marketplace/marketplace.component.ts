@@ -31,7 +31,7 @@ export class MarketplaceComponent implements OnInit {
         ['asian', 'traditional', 'everyday', 'whimsical', 'glass']
     )
   ]
-  
+
   sort: string = "allTeapots";
 
   onChange(optionFromMenu) {
@@ -42,7 +42,6 @@ export class MarketplaceComponent implements OnInit {
 
   filterParamSet(param) {
     this.filterParam = param;
-    console.log("this is at the parent: " + this.filterParam);
   }
 
 }
