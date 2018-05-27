@@ -18,10 +18,10 @@ _This project was generated with [Angular CLI](https://github.com/angular/angula
 ## Screenshots
 
 Original: <br>
-<img src="https://github.com/brenderbee/building-layouts/blob/master/src/assets/readme-img/desktop-og.png?raw=true" width="400" />
+<img src="https://raw.githubusercontent.com/brenderbee/stash-clone/master/src/assets/img/readme/original.png" width="400" />
 
 Clone: <br>
-<img src="https://github.com/brenderbee/building-layouts/blob/master/src/assets/readme-img/desktop-clone.png?raw=true" width="400" />
+<img src="https://raw.githubusercontent.com/brenderbee/stash-clone/master/src/assets/img/readme/clone.png" width="400" />
 
 ## Setup/Installation Requirements
 
