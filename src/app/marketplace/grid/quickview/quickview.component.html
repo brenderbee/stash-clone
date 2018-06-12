@@ -35,9 +35,11 @@
       <p>Item: #{{childteapot.$key}}</p>
       <h2>{{childteapot.name }}</h2>
       <h3 *ngIf="childteapot.colors.length > 0">Select a Color</h3>
-      <div class="colors" *ngFor="let color of childteapot.colors">
-        <p>{{color}}</p>
-        <p>$ {{childteapot.price}}</p>
+      <div class="colors-container">
+        <div class="colors" *ngFor="let color of childteapot.colors">
+          <p>{{color}}</p>
+          <p>$ {{childteapot.price}}</p>
+        </div>
       </div>
       <div class="quick-cart">
         <span>$ {{childteapot.price}}</span>

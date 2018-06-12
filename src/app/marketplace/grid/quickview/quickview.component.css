@@ -67,6 +67,11 @@
   color: #838383;
 }
 
+.quickview-modal-summary .colors-container {
+  max-height: 238px;
+  overflow: scroll;
+}
+
 .quickview-modal-summary .colors {
   display: flex;
   justify-content: space-between;
