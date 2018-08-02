@@ -1,4 +1,4 @@
-<div class="card" *ngFor="let teapot of teapots | async | filter:childfilterParam" (mouseenter)="showQuickviewButton(teapot)" (mouseleave)="hideQuickviewButton()">
+<div class="card" *ngFor="let teapot of teapots | async | filter:childfilterParam | sort:childSortParam" (mouseenter)="showQuickviewButton(teapot)" (mouseleave)="hideQuickviewButton()">
   <div class="quickview" *ngIf="hoveredTeapot===teapot" (click)="quickviewButtonClicked(teapot)">
     <p>+QUICKVIEW</p>
   </div>

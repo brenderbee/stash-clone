@@ -4,11 +4,11 @@
   <div class="grid">
     <div class="sort">
       <p>Sort by:</p>
-      <select (change)="onChange($event.target.value)">
+      <select (change)="onSortSet($event.target.value)">
         <option value="allTeapots"><span>All Teapots</span></option>
         <option value="priceLowToHigh"><span>Price-Low to High</span></option>
       </select>
     </div>
-    <app-grid [childfilterParam]="filterParam"></app-grid>
+    <app-grid [childfilterParam]="filterParam" [childSortParam]="sortParam"></app-grid>
   </div>
 </div>

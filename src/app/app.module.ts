@@ -9,6 +9,7 @@ import { SidebarComponent } from './marketplace/sidebar/sidebar.component';
 import { GridComponent } from './marketplace/grid/grid.component';
 import { QuickviewComponent } from './marketplace/grid/quickview/quickview.component';
 import { FilterPipe } from './filter.pipe';
+import { SortPipe } from './sort.pipe';
 
 import { routing } from './app.routing';
 import { ItemDetailComponent } from './item-detail/item-detail.component';
@@ -37,6 +38,7 @@ export const firebaseConfig = {
     GridComponent,
     QuickviewComponent,
     FilterPipe,
+    SortPipe,
     ItemDetailComponent,
     MarketplaceComponent,
     ShoppingCartComponent,

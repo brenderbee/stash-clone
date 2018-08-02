@@ -6,7 +6,7 @@ app-banner {
   margin-bottom: 0.875rem;
 }
 
-main-content {
+.main-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

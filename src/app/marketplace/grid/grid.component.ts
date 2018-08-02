@@ -11,12 +11,14 @@ import { FirebaseListObservable } from 'angularfire2/database';
   styleUrls: ['./grid.component.css'],
   providers: [TeapotService]
 })
+
 export class GridComponent implements OnInit {
 
   teapots:  FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
 
   @Input() childfilterParam: string;
+  @Input() childSortParam: string;
   @Output() mouseEnterSender = new EventEmitter();
   @Output() mouseLeaveSender = new EventEmitter();
 

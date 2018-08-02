@@ -32,10 +32,11 @@ export class MarketplaceComponent implements OnInit {
     )
   ]
 
-  sort: string = "allTeapots";
+  sortParam: string = "allTeapots";
 
-  onChange(optionFromMenu) {
-    this.sort = optionFromMenu;
+  onSortSet(optionFromMenu) {
+    this.sortParam = optionFromMenu;
+    console.log(optionFromMenu);
   }
 
   filterParam = null;
